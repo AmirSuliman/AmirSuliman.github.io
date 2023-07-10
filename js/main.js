@@ -10,22 +10,10 @@ $(document).ready(function (){
 
   $('.owl-carousel').owlCarousel({
     loop:true,
-    margin:10,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            div:true
-        },
-        600:{
-            items:3,
-            div:false
-        },
-        1000:{
-            items:5,
-            div:true,
-            loop:false
-        }
-    }
-})
+    autoplay:true,
+    autoplayTimeout:3000,
+    dots:false,
+    nav:true,
+    navText:[$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')]
+  });
 });
